@@ -1,17 +1,12 @@
+
 import React, { useState } from 'react';
 import MovieDetail from './MovieDetail';
 
 const MovieCard = ({ movie }) => {
-  const [showDetail, setShowDetail] = useState(false);
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  // const handleCardClick = () => {
-  //   setShowDetail(!showDetail); 
-  //   console.log(showDetail);
-  //   console.log(movie)
-  // };
 
   return (
     <>
@@ -33,6 +28,7 @@ const MovieCard = ({ movie }) => {
       </div>
       <MovieDetail open={open} handleClose={handleClose} imdbID={movie.imdbID} />
     </>
+
   );
 };
 

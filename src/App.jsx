@@ -1,3 +1,4 @@
+
 import Main from "./Components/Main";
 
 const App = ()=> {
@@ -7,6 +8,5 @@ const App = ()=> {
     </>
   )
 
-}
 
 export default App;
