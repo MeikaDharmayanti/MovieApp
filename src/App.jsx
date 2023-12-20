@@ -1,5 +1,5 @@
 import Main from "./Components/Main";
-
+import "./App.css";
 
 const App = ()=> {
   return(
@@ -7,6 +7,7 @@ const App = ()=> {
       <Main />
     </>
   )
+
 }
 
 export default App;
